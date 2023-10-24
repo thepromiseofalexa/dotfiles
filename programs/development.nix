@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    neofetch
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
       jnoortheen.nix-ide
