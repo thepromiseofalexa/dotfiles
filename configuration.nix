@@ -14,6 +14,7 @@
       ./programs/fonts.nix
       ./programs/gaming.nix
       ./programs/gnome.nix
+      ./programs/cli.nix
       # Hardware
       ./hardware-configuration.nix
     ];

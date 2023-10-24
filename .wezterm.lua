@@ -6,6 +6,6 @@ if wezterm.config_builder then
 end
 
 config.color_scheme = 'Catppuccin Macchiato'
-config.font = wezterm.font 'Iosevka'
+config.font = wezterm.font 'Iosevka Nerd Font'
 
 return config

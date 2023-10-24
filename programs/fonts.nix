@@ -4,8 +4,6 @@
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
-    iosevka
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Iosevka" ]; })
   ];
-
 }

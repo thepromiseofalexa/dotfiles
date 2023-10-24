@@ -1,11 +1,14 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     neofetch
-    vscode
+    (vscode-with-extensions.override {
+      vscodeExtensions = with vscode-extensions; [
+      jnoortheen.nix-ide
+      mskelton.one-dark-theme
+      wakatime.vscode-wakatime
+      ];
+    })
     wezterm
-    wget
-    git
-    unzip
     github-desktop
   ];
 }
