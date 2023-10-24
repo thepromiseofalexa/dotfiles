@@ -5,6 +5,7 @@
     gnomeExtensions.dash-to-dock
     gnome.gnome-tweaks
     gnome.seahorse
+    gnome.gnome-software
     papirus-icon-theme
   ];
 
@@ -13,4 +14,5 @@
   ];
 
   services.gnome.gnome-keyring.enable = true;
+  services.flatpak.enable = true;
 }
