@@ -1,9 +1,11 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    (discord.override { 
-      withOpenASAR = true; 
-      withVencord = true; 
-    })
+    # TODO: Vencord + OpenASAR have problem with Discord bcs released new code version
+    #(discord.override { 
+    #  withOpenASAR = true; 
+    #  withVencord = true; 
+    #})
+    discord
     telegram-desktop
     microsoft-edge
     youtube-music
