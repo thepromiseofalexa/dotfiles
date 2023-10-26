@@ -21,7 +21,8 @@
       ./shell/cli.nix
       ./shell/zsh.nix
       # Desktop
-      ./desktop/gnome.nix
+      # ./desktop/gnome.nix
+      ./desktop/kde.nix
     ];
 
   nix.settings.experimental-features = [ 
