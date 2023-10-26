@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, specialArgs, ... }:
 
 {
   imports =
@@ -10,6 +10,8 @@
       # Hardware
       ./hardware/nvidia.nix
       ./hardware/asura.nix
+      # Home-manager
+      inputs.home-manager.nixosModules.home-manager
       # Programs
       ./programs/everyday.nix
       ./programs/development.nix
@@ -19,5 +21,17 @@
       ./programs/zsh.nix
       # Desktop
       ./desktop/gnome.nix
+    ];
+
+    # home-manager = {
+    #  extraSpecialArgs = { inherit inputs; };
+    #  users = {
+    #    limerence = import ./home/default.nix;
+    #  };
+    #};
+
+    nix.settings.experimental-features = [ 
+      "nix-command" 
+      "flakes" 
     ];
 }
