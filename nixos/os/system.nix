@@ -8,7 +8,7 @@
   };
 
     networking = {
-    hostName = "nixos";
+    hostName = "raidenshogun";
     networkmanager.enable = true;
   };
 
