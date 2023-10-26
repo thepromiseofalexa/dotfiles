@@ -16,7 +16,7 @@
     inherit (self) outputs;
   in {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      raidenshogun = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         modules = [./nixos/configuration.nix];
       };
