@@ -12,6 +12,7 @@
     gnomeExtensions.pop-shell
     gnomeExtensions.blur-my-shell
     gnomeExtensions.just-perfection
+    gnomeExtensions.workspace-indicator
     # GNOME packages
     gnome.gnome-tweaks
     gnome.seahorse
