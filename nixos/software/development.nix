@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    vscode-fhs
+    # vscode-fhs
+    jetbrains.idea-community
     wezterm
     github-desktop
   ];
