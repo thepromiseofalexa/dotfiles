@@ -17,20 +17,14 @@
       ./programs/development.nix
       ./programs/fonts.nix
       ./programs/gaming.nix
-      ./programs/cli.nix
-      ./programs/zsh.nix
+      # Shell
+      ./shell/cli.nix
+      ./shell/zsh.nix
       # Desktop
       ./desktop/gnome.nix
     ];
 
-    # home-manager = {
-    #  extraSpecialArgs = { inherit inputs; };
-    #  users = {
-    #    limerence = import ./home/default.nix;
-    #  };
-    #};
-
-    nix.settings.experimental-features = [ 
+  nix.settings.experimental-features = [ 
       "nix-command" 
       "flakes" 
     ];

@@ -1,12 +1,12 @@
-{ pkgs, ... }: {
-    programs.zsh = {
+{ config, pkgs, ... }: {
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
     shellAliases = {
       nix-rebuild = "sudo nixos-rebuild switch && sudo nix-collect-garbage -d";
-      dotfiles = "cd ~/Документы/dotfiles";
+      dotfiles = "cd ~/dotfiles";
     };
     ohMyZsh = {
       enable = true;
@@ -15,5 +15,7 @@
     };
   };
 
-  users.defaultUserShell = pkgs.zsh;
+  users = {
+    defaultUserShell = pkgs.zsh;
+  };
 }
