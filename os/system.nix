@@ -40,6 +40,7 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   programs.dconf.enable = true;
+  time.hardwareClockInLocalTime = true;
   system.stateVersion = "23.05";
 
 }

@@ -6,12 +6,17 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # Extensions
     gnomeExtensions.appindicator
-    gnomeExtensions.big-avatar
     gnomeExtensions.dash-to-dock
+    gnomeExtensions.pop-shell
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.just-perfection
+    # GNOME packages
     gnome.gnome-tweaks
     gnome.seahorse
     gnome.gnome-software
+    # Themes
     papirus-icon-theme
   ];
 

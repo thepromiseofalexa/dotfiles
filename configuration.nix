@@ -16,6 +16,7 @@
       ./programs/fonts.nix
       ./programs/gaming.nix
       ./programs/cli.nix
+      ./programs/zsh.nix
       # Desktop
       ./desktop/gnome.nix
     ];
