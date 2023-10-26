@@ -9,6 +9,7 @@
     telegram-desktop
     microsoft-edge
     youtube-music
+    spotify
     obsidian
   ];
 }
