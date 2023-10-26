@@ -13,10 +13,10 @@
       # Home-manager
       inputs.home-manager.nixosModules.home-manager
       # Programs
-      ./programs/everyday.nix
-      ./programs/development.nix
-      ./programs/fonts.nix
-      ./programs/gaming.nix
+      ./software/everyday.nix
+      ./software/development.nix
+      ./software/fonts.nix
+      ./software/gaming.nix
       # Shell
       ./shell/cli.nix
       ./shell/zsh.nix
