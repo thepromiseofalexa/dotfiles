@@ -6,5 +6,6 @@
 
     environment.systemPackages = with pkgs; [
       libsForQt5.qtstyleplugin-kvantum
+      flameshot
     ];
 }

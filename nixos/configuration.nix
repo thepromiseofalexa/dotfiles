@@ -14,7 +14,6 @@
       inputs.home-manager.nixosModules.home-manager
       # Programs
       ./software/everyday.nix
-      ./software/development.nix
       ./software/fonts.nix
       ./software/gaming.nix
       # Shell

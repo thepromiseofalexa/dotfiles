@@ -2,6 +2,10 @@
   environment.systemPackages = with pkgs; [
     mangohud
     protonup-qt
+    lutris
+    wineWowPackages.staging
+    winetricks
+    protontricks
   ];
 
 programs.steam = {

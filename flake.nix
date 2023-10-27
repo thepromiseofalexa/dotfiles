@@ -18,7 +18,9 @@
     nixosConfigurations = {
       raidenshogun = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./nixos/configuration.nix];
+        modules = [
+        ./nixos/configuration.nix
+        ];
       };
     };
 
@@ -26,7 +28,9 @@
       "limerence@raidenshogun" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./home-manager];
+        modules = [
+        ./home-manager
+        ];
       };
     };
   };
