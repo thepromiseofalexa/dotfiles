@@ -9,7 +9,8 @@
     telegram-desktop
     microsoft-edge
     youtube-music
-    spotify
     obsidian
   ];
+
+  services.flatpak.enable = true;
 }
